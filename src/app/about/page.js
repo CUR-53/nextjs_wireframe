@@ -5,7 +5,7 @@ const PageAbout = () => {
     
     return <div className={styles.page}>
         <div>
-            <h1>About</h1>
+            <h1>About Page</h1>
             <span><Link href='/'>2023</Link></span>
         </div>
     </div>
