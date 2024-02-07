@@ -57,6 +57,16 @@ export const getPages = () => {
   return pages;
 };
 
+export const addQandas = (qanda) => {
+  let newQanda = {
+    id: 4,
+    question: 'nyt spørsmål',
+    answer: 'nyt svar',
+  };
+  qandas.push(newQanda);
+  return qandas;
+};
+
 export const getQandas = () => {
   return qandas;
 };

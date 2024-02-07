@@ -1,0 +1,25 @@
+.accordion {
+  height: max-content;
+  cursor: pointer;
+}
+
+.accordion h2 {
+  margin: 0;
+}
+
+.accordion .question {
+  padding: 20px;
+  height: 100%;
+}
+
+.accordion.active .answer {
+  display: block;
+  border: 2px red solid;
+  background-color: white;
+  padding: 20px;
+  height: 100%;
+}
+
+.accordion .answer {
+  display: none;
+}
