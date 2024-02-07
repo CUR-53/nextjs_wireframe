@@ -1,7 +1,7 @@
 import { getPagesByUrlName } from '@/app/lib/data.service';
 import styles from './page.module.css';
 import Image from 'next/image';
-import Qandas from '@/components/boilerplate/qandas/qandas';
+import Qandas from '@/components/qandas/qandas';
 
 const Page = ({ params }) => {
   console.log(params);

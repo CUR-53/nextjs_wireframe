@@ -1,3 +1,5 @@
+import randomInteger from 'random-int';
+
 const pages = [
   {
     id: 1,
@@ -57,13 +59,20 @@ export const getPages = () => {
   return pages;
 };
 
-export const addQandas = (qanda) => {
-  let newQanda = {
-    id: 4,
-    question: 'nyt spørsmål',
-    answer: 'nyt svar',
+export const addQandas = (body) => {
+  // body
+  body = {
+    question: 'nytt spørsmål',
+    answer: 'litt svar',
   };
-  qandas.push(newQanda);
+
+  // add id
+  body.id = randomInteger(10, 10000);
+
+  // push to array
+  qandas.push(body);
+
+  // return array
   return qandas;
 };
 

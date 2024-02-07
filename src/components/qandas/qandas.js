@@ -5,7 +5,7 @@ import Qanda from '../qanda/qanda';
 
 const Qandas = () => {
   const [qandasData, setQandasData] = useState([]);
-  
+
   useEffect(() => {
     const getQandas = async () => {
       return await fetch('/api/qandas').then((res) => res.json());

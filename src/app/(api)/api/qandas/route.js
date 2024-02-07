@@ -8,8 +8,11 @@ export async function GET() {
 }
 
 export async function POST(request) {
-  const newQanda = addQandas();
+  const body = await request.json();
+  console.log('Body POST', body);
 
+  const newQanda = addQandas(body);
   console.log('ET POST', newQanda);
-  return NextResponse.json({ tak: 'for post' });
+
+  return NextResponse.json(newQanda);
 }

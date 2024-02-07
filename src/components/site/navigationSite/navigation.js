@@ -4,7 +4,7 @@ import styles from './navigation.module.css';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import React, { useState } from 'react';
 
-const Navigation = ({ pages }) => {
+const NavigationSite = ({ pages }) => {
   const [isOpen, setIsOpen] = useState(true);
   let activeClass = isOpen ? styles.open : styles.closed;
   const handleClick = () => {
@@ -28,4 +28,4 @@ const Navigation = ({ pages }) => {
   );
 };
 
-export default Navigation;
+export default NavigationSite;
