@@ -1,5 +1,4 @@
 :root {
-
   /* Global Variables */
   --main-color: #f1f1f1;
 
@@ -8,18 +7,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
   :root {
-    
     /* Global Variables */
     --main-color: #333;
 
-
     /* Component Specific Variables */
     --box-color: rgb(235, 235, 160);
-
   }
-
 }
 
 * {
@@ -35,15 +29,12 @@ body {
 
 body {
   background-color: var(--main-color);
-  ;
 }
 
 a {
   color: inherit;
   text-decoration: underline;
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   html {
