@@ -55,6 +55,29 @@ const qandas = [
   },
 ];
 
+const subscribers = [
+  {
+    id: 1,
+    name: 'John Doe',
+    email: 'johndoe@gmail.com',
+  },
+];
+
+export const addSubs = (body) => {
+  // add id
+  body.id = randomInteger(10, 10000);
+
+  // push to array
+  subscribers.push(body);
+
+  // return array
+  return subscribers;
+};
+
+export const getSubs = () => {
+  return subscribers;
+};
+
 export const getPages = () => {
   return pages;
 };

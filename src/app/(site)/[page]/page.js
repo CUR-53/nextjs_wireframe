@@ -2,6 +2,7 @@ import { getPagesByUrlName } from '@/app/lib/data.service';
 import styles from './page.module.css';
 import Image from 'next/image';
 import Qandas from '@/components/qandas/qandas';
+import SubscriberForm from '@/components/site/subscribersform/subscriberform';
 
 const Page = ({ params }) => {
   console.log(params);
@@ -31,6 +32,9 @@ const Page = ({ params }) => {
       </div>
       <div>
         <Qandas />
+      </div>
+      <div>
+        <SubscriberForm />
       </div>
     </div>
   );

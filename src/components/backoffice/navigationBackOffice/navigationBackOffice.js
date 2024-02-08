@@ -17,6 +17,7 @@ const NavigationBackOffice = () => {
       <div className={styles.nav}>
         <div className={activeClass}>
           <Link href="/backoffice/qandas">Qandas</Link>
+          <Link href="/backoffice/subscribers">Subscribers</Link>
           {/* {pages.map((page) => (
             <Link key={page.id} href={page.urlName}>
               {page.title}
